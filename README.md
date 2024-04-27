@@ -1,5 +1,3 @@
-# Cloud_programming_assignment2
-
 AWS SETUP :
 Let’s Start with setting up AWS environment.
 1.	Get AWS learner module access and setup account.
@@ -15,7 +13,7 @@ iii)	Setup Cluster Configuration Primary as m4.large, core as m4.large and Tasks
 3.	Create Two such instances.
 4.	Then Create Cluster. Now wait for the status to go from “starting” to “waiting”. 
 
-Network firewall Setup
+Network firewall Setup.
 1.	Go to Security Firewall and select “Primary”.
 2.	Go to Inbound Network Rules and select Edit option. 
 3.	Create a new rule to allow “SSH” Connection from myIP.
@@ -37,3 +35,15 @@ Publish python files using put command:
 put /filepath/to/your/pythonfile/filename.py
 3.	Connect to EMR using ssh command and verify the files using 
 Pwd and ls commands 
+
+Create S3 Bucket 
+1. Go to services and select “S3”.
+2. Choose a bucket name, and go with default settings
+3. Choose Create Bucket
+4. Upload both the datasets, training.csv and validation.csv
+5. Use this bucket to save the model after running the model through   EMR Cluster.
+
+Create Docker
+1.	docker build -t sj764/prediction.
+2.	docker push sj764/prediction:latest
+3.	docker run -v /home/ec2-user/code/data/csv/:code/data/csv sj764/wine-prediction validation.csv
