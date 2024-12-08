@@ -1,2 +1,42 @@
+# OS generated files
 .DS_Store
+Thumbs.db
+
+# Python files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.venv
+env/
+venv/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Docker
+*.log
+*.tar
+docker-compose.override.yml
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+.tox/
+.nox/
+.coverage
+
+# Compiled code
+*.o
+*.a
+*.so
+
+# Dataset and model files
+Dataset/
+models/
 
