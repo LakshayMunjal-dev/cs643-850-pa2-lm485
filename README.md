@@ -2,6 +2,10 @@
 
 This repository contains the implementation of a machine learning model using **Spark**, **Docker**, and **AWS** infrastructure for distributed training and prediction. The project demonstrates how to set up a scalable environment, deploy models, and containerize the application using Docker.
 
+# Github Repo Link
+
+   [Link to Github Repository](https://github.com/LakshayMunjal-dev/cs643-850-pa2-lm485)
+
 ### Table of Contents
 
 1. [Overview](#overview)
